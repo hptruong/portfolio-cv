@@ -105,7 +105,7 @@ export default function Preloader() {
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
         {/* Name text */}
         <div ref={nameRef} className="mb-6 overflow-hidden">
-          {"AYUSH SINGH".split("").map((char, i) => (
+          {"JULIAN TRUONG".split("").map((char, i) => (
             <span
               key={i}
               className="preloader-char inline-block text-xs sm:text-sm tracking-[0.5em] font-medium"
