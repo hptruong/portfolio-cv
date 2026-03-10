@@ -82,7 +82,7 @@ export default function Header() {
     <>
       <header
         ref={headerRef}
-        className="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+        className="fixed top-0 left-0 w-full z-50 transition duration-300"
       >
         <div className="flex items-center justify-between px-5 sm:px-8 md:px-12 py-4 sm:py-6">
           {/* Logo */}
@@ -122,7 +122,7 @@ export default function Header() {
               aria-label="Toggle menu"
             >
               <span
-                className="absolute left-0 h-0.5 transition-all duration-300 origin-center"
+                className="absolute left-0 h-0.5 transition-[width,transform,top,bottom,background-color] duration-300 origin-center"
                 style={{
                   backgroundColor: "var(--text-primary)",
                   width: "100%",
@@ -131,7 +131,7 @@ export default function Header() {
                 }}
               />
               <span
-                className="absolute left-0 top-1/2 -translate-y-1/2 h-0.5 transition-all duration-300"
+                className="absolute left-0 top-1/2 -translate-y-1/2 h-0.5 transition-[width,opacity,background-color] duration-300"
                 style={{
                   backgroundColor: "var(--text-primary)",
                   opacity: isOpen ? 0 : 1,
@@ -139,7 +139,7 @@ export default function Header() {
                 }}
               />
               <span
-                className="absolute left-0 h-0.5 transition-all duration-300 origin-center"
+                className="absolute left-0 h-0.5 transition-[width,transform,top,bottom,background-color] duration-300 origin-center"
                 style={{
                   backgroundColor: "var(--text-primary)",
                   width: isOpen ? "100%" : "80%",
@@ -174,7 +174,7 @@ export default function Header() {
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-secondary)")}
             >
               {link.label}
-              <span className="absolute -bottom-2 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{ backgroundColor: "var(--accent)" }} />
+              <span className="absolute -bottom-2 left-0 w-0 h-0.5 group-hover:w-full transition-[width,background-color] duration-300" style={{ backgroundColor: "var(--accent)" }} />
             </a>
           ))}
         </nav>
